@@ -2,6 +2,9 @@ package com.gift.datastructure;
 
 import org.junit.Test;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import static org.junit.Assert.*;
 
 /**
@@ -14,5 +17,7 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
+    
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(5);
     }
 }

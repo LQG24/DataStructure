@@ -1,4 +1,4 @@
-package com.gift.datastructure.LRU;
+package com.gift.datastructure.lru;
 
 import org.junit.Test;
 
