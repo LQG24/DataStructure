@@ -1,5 +1,6 @@
 package com.gift.datastructure;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,6 +10,9 @@ import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.gift.datastructure.handler.count_down.CountDownActivity;
+import com.gift.datastructure.handler.handler_thread.HandlerThreadActivity;
 
 /**
  *具有暂停功能的优先级线程池
@@ -61,5 +65,13 @@ public class MainActivity extends AppCompatActivity {
     
     public void onResumeThread(View view) {
         mPauseThreadPoolExecutor.resume();
+    }
+
+    public void onCountDown(View view){
+        startActivity(new Intent(this, CountDownActivity.class));
+    }
+
+    public void oToHandlerThread(View view){
+        startActivity(new Intent(this, HandlerThreadActivity.class));
     }
 }

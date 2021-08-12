@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<!--        <activity android:name=".handler_thread.HandlerThreadActivity"></activity>-->
-        <activity android:name=".handler.handler_thread.HandlerThreadActivity">
+        <activity android:name=".handler.count_down.CountDownActivity"></activity>
+        <activity android:name=".handler.handler_thread.HandlerThreadActivity"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
